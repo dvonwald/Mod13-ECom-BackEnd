@@ -42,6 +42,38 @@ Please follow the video walkthroughs. You will need to use Insomnia or a similar
 
 Use localhost:3001 and the respective routes. If you need to know each of the routes, please check the routes files as I have annotated them there.
 
+Here is a video link for creating the Database in MySQL shell, Seeding the database from the command line, and Starting the server:
+
+- https://drive.google.com/file/d/1rLOE-fLREx9rO5qnRQvD_U2MmC5IXhYt/view?usp=sharing
+
+Here is a video link for how to perform a GET ALL for Categories, Products, and Tags:
+
+- https://drive.google.com/file/d/1sJ68uu1jKB-HCG1gm79GI2_mWWSxM31t/view?usp=sharing
+
+Here is a video link of how to perform a GET by ID for Category, Product, and Tags:
+
+- https://drive.google.com/file/d/1VOpSvJfHq5YNZVIQeyktyEYYsdFNb25p/view?usp=sharing
+
+Here is a video link of how to POST / create a new Category & Tag:
+
+- https://drive.google.com/file/d/1VOpSvJfHq5YNZVIQeyktyEYYsdFNb25p/view?usp=sharing
+
+Here is avideo link of how to POST / create a new Product:
+
+- https://drive.google.com/file/d/1jjvJjrkC_mILXIYLrkAVLIxpT36bxb2Z/view?usp=sharing
+
+Here is a video link of how to update (PUT) a Product:
+
+- https://drive.google.com/file/d/18wOJnE0f50LKSS-khrPJIP6H7ya1YNj3/view?usp=sharing
+
+Here is a video link of how to update (PUT) a Category and Tag:
+
+- https://drive.google.com/file/d/1fDw7Um3N0COeokoHHa4a7wit6lyXj7m_/view?usp=sharing
+
+Here is a video link of how to DELETE a Product, Category and Tag:
+
+- https://drive.google.com/file/d/1F8c5qnFAK_z_Wa8ZjQATgN5oaEIEfUo8/view?usp=sharing
+
 ## License
 
 is the license being used for this application.
