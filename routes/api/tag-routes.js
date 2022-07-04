@@ -3,6 +3,7 @@ const { Tag, Product, ProductTag } = require("../../models");
 
 // The `/api/tags` endpoint
 
+//GET all Tags -- tested working
 router.get("/", async (req, res) => {
   // find all tags
   // be sure to include its associated Product data
@@ -16,6 +17,8 @@ router.get("/", async (req, res) => {
   }
 });
 
+// GET one Tag by ID
+// localhost:3001/api/tags/:id -- Tested working
 router.get("/:id", async (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
@@ -24,14 +27,17 @@ router.get("/:id", async (req, res) => {
       include: [{ model: Product }],
     });
     if (!tagData) {
-      res.status(404).json({ message: "No library card found with that ID!" });
+      res.status(404).json({ message: "No tag found with that ID!" });
       return;
     }
+    res.status(200).json(tagData);
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
+//CREATE/post new Tag
+// localhost:3001/api/tags + {tag_name} -- Tested working
 router.post("/", async (req, res) => {
   // create a new tag
   try {
@@ -44,6 +50,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+// tested working
 router.put("/:id", async (req, res) => {
   // update a tag's name by its `id` value
   try {
@@ -58,6 +65,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+//tested working
 router.delete("/:id", async (req, res) => {
   // delete on tag by its `id` value
   try {

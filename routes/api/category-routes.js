@@ -3,6 +3,7 @@ const { Category, Product } = require("../../models");
 
 // The `/api/categories` endpoint
 
+//GET all products -- Tested working
 router.get("/", async (req, res) => {
   // find all categories
   // be sure to include its associated Products
@@ -16,6 +17,8 @@ router.get("/", async (req, res) => {
   }
 });
 
+// GET one product by ID -- tested working
+// localhost:3001/api/categories/:id
 router.get("/:id", async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
@@ -29,6 +32,8 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+//POST/create new category -- Tested working
+// localhost:3001/api/categories + {category_name}
 router.post("/", async (req, res) => {
   // create a new category
   try {
@@ -41,6 +46,8 @@ router.post("/", async (req, res) => {
   }
 });
 
+//Update a category_name by ID -- tested working
+// localhost:3001/api/categories/:id + {category_name}
 router.put("/:id", async (req, res) => {
   // update a category by its `id` value
   try {
@@ -55,6 +62,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+//Not working -- foreign key conflict
 router.delete("/:id", async (req, res) => {
   // delete a category by its `id` value
   try {
