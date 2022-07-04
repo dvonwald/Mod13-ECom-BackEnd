@@ -62,7 +62,9 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-//Not working -- foreign key conflict
+//Tested, Partially working. Only working when not associated with a product.
+// Cascade doesn't seem to be working, not sure how to fix.
+// Do I really want products to be deleted when a category is deleted?
 router.delete("/:id", async (req, res) => {
   // delete a category by its `id` value
   try {
